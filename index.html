@@ -73,7 +73,7 @@
     .header-text h1 {
         color: #18396C;
         font-size: 3.4em;
-        margin-top: 0.5em;
+        margin-top: 0.3em;
         margin-bottom: -0.1em;
         text-wrap: balance;
     }
@@ -240,7 +240,30 @@
     /* MOBILE STYLES         */
     /* ===================== */
     @media (max-width: 700px) {
+.mobile-header-text {
+    display: block;
+    text-align: center;
+    padding: 1.5em 1em;
+    background-color: #ffffff;
+}
 
+.mobile-header-text h1 {
+    font-family: 'Source Serif 4';
+    color: #18396C;
+    font-size: 1.8em;
+    line-height: 1.2;
+    margin: 0 0 0.3em 0;
+    text-wrap: balance;
+}
+
+.mobile-header-text p.emphasis {
+    font-size: 16px;
+    padding-bottom: 0.3em;
+}
+
+.mobile-header-text figcaption {
+    text-align: center;
+}
         body {
             font-size: 16px;
         }
@@ -249,22 +272,16 @@
             padding-right: 1em;
         }
         /* Banner */
-        .with-image-bg {
-            justify-content: center;
-            min-height: 50svh;
-            background-position: left center;
-        }
+        /* Banner — image only on mobile, no text on top */
+.with-image-bg {
+    min-height: 40svh;
+    background-position: center;
+    display: block;        /* turns off flexbox so text won't sit on image */
+}
 
-        .header-text {
-            width: 85%;
-            background-color: rgba(255, 255, 255, 0.88);
-            border-radius: 12px;
-            padding: 1.2em;
-            margin: 0 auto;
-        }
-
-        .header-text h1 {
-            font-size: 1.6em;
+.header-text {
+    display: none;         /* hide text from inside the banner image */
+}
         }
         /* Headings */
         h1 {
@@ -300,7 +317,10 @@
         #scrolly {
             padding: 0;
         }
-
+/* hidden on desktop, shown on mobile */
+.mobile-header-text {
+    display: none;
+}
         .sticky-thing {
             height: 50vh;
         }
@@ -339,6 +359,12 @@
     <h1>The Making of the Delhi Metro</h1>
             <p class="emphasis">By <a href="https://purvikasharma.com">Purvika Sharma</a></p>
             <figcaption>Published on 01 July, 2026</figcaption>
+			<div class="mobile-header-text">
+    <img src="images/globe.png" alt="A globe icon" width="50" height="50" style="display:block; margin: 0 auto 0.5em auto;">
+    <h1>The Making of the Delhi Metro</h1>
+    <p class="emphasis">By <a href="https://purvikasharma.com">Purvika Sharma</a></p>
+    <figcaption>Published on 01 July, 2026</figcaption>
+</div>
         </div>
     </div>
 
