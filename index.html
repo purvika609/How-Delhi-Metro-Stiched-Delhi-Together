@@ -19,190 +19,181 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <style>
     .with-image-bg {
-    position: relative;
-    background-size: cover;
-    background-position: center;  /* add this */
-    margin-bottom: 2em;
-    min-height: 70svh;
-    background-image: url('images/header.png');
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 2em;
+        min-height: 70svh;
+        background-image: url('images/header.png');
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
     }
-        body {
-            margin: 0;
-            font-size: 20px;
-            font-family: 'Inter';
-            text-rendering: optimizeLegibility;
-        }
 
-        .content {
-            max-width: 640px;
-            margin: auto;
-        }
+    body {
+        margin: 0;
+        font-size: 20px;
+        font-family: 'Inter';
+        text-rendering: optimizeLegibility;
+    }
 
-        .header {
-            padding: 3em 0;
-        }
+    .content {
+        max-width: 640px;
+        margin: auto;
+    }
 
-        a {
-            font-family: 'Inter';
-            color: #18396C;
-        }
+    .header {
+        padding: 3em 0;
+    }
 
-        .footer {
-            background: #E1EEF2;
-            text-align: center;
-            font-size: 0.8em;
-            margin-top: 4em;
-            padding: 4em 0;
-        }
+    a {
+        font-family: 'Inter';
+        color: #18396C;
+    }
 
-        figure {
-            margin: 0;
-            padding-bottom: 1.2em;
-        }
+    .footer {
+        background: #E1EEF2;
+        text-align: center;
+        font-size: 0.8em;
+        margin-top: 4em;
+        padding: 4em 0;
+    }
 
-        figcaption {
-            font-size: 14px;
-            font-weight: 300;
-            text-align: left;
-            margin-bottom: 0.5em;
-            padding-bottom: 1em;
-            color: #666;
-        }
-        .header-text {
-        width: 45%;          /* takes up right half */
+    figure {
+        margin: 0;
+        padding-bottom: 1.2em;
+    }
+
+    figcaption {
+        font-size: 14px;
+        font-weight: 300;
+        text-align: left;
+        margin-bottom: 0.5em;
+        padding-bottom: 1em;
+        color: #666;
+    }
+
+    .header-text {
+        width: 45%;
         padding: 1em;
-        color: #18396C
-        }
+        color: #18396C;
+    }
 
-        .header-text h1 {
+    .header-text h1 {
         color: #18396C;
         font-size: 3.4em;
-        margin-top: 0;        /* removes top margin on h1 */
+        margin-top: 0;
         margin-bottom: -0.1em;
-        margin-top: 0.2em;
         text-wrap: balance;
-
-        }
+    }
 
     .header-text p {
-    color: #E3E3E3;
-    font-size: 16px;
-}
-        h1 {
-            font-family: 'Source Serif 4';
-            align-items: right;
-            font-weight: 600 italic;
-            font-size: 100px;
-            line-height: 1.1;
-            color: #18396C
-        }
-        h2{
-            font-family: 'Source Serif 4';
-            color: #3F3F3F;
-            font-size: 20px;
-            font-weight: medium;
-            line-height: 90%;
-            padding-bottom: 1em;
-            margin: 0.5em 0 0.5em 0;
-    
-        }
+        color: #666;
+        font-size: 16px;
+    }
 
-        iframe,
-        img,
-        video {
-            max-width: 100%;
-        }
+    h1 {
+        font-family: 'Source Serif 4';
+        font-weight: 600;
+        font-size: 3em;
+        line-height: 1.1;
+        color: #18396C;
+    }
 
-        img.full-width {
-    width: 100vw;
-    max-width: 100vw !important;
-    display: block;
-    margin-left: 50%;
-    transform: translateX(-50%);
-}
+    h2 {
+        font-family: 'Source Serif 4';
+        color: #3F3F3F;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 90%;
+        padding-bottom: 1em;
+        margin: 0.5em 0 0.5em 0;
+    }
 
-        p {
-            font-family: 'Inter';
-            font-weight: 300;
-            font-size: 18px;
-            line-height: 130%;
-            margin: 0;
-            padding-bottom: 1em;
-            color: #3F3F3F;
-        }
-        p.emphasis {
-            font-family: 'Inter';
-            font-weight: 600;
-            font-size: 22px;
-            line-height: 130%;
-            margin: 0;
-            padding-bottom: 1em;
-            padding-top: 0.5em;
-            color: #18396C;
-        }
-        p2 {
-            font-family: 'Inter';
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 130%;
-            margin: 0;
-            padding-bottom: 1em;
-            color: #3F3F3F;
-        }
+    iframe,
+    img,
+    video {
+        max-width: 100%;
+    }
 
-        ul {
-            margin: 0;
-            padding-bottom: 1em;
-            line-height: 1.6;
-        }
+    img.full-width {
+        width: 100vw;
+        max-width: 100vw !important;
+        display: block;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
 
-        iframe {
-            padding-bottom: 1.2em;
-            color: #3F3F3F;
+    p {
+        font-family: 'Inter';
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 130%;
+        margin: 0;
+        padding-bottom: 1em;
+        color: #3F3F3F;
+    }
 
-        }
+    p.emphasis {
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 130%;
+        margin: 0;
+        padding-bottom: 1em;
+        padding-top: 0.5em;
+        color: #18396C;
+    }
 
-        code {
-            font-family: 'Courier New', monospace;
-            background: #fffbaf;
-            font-size: 0.85em;
-        }
+    p2 {
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 130%;
+        margin: 0;
+        padding-bottom: 1em;
+        color: #3F3F3F;
+    }
 
-        .full-width figure {
-            text-align: center;
-        }
-        .mango-full-width {
+    ul {
+        margin: 0;
+        padding-bottom: 1em;
+        line-height: 1.6;
+    }
+
+    iframe {
+        padding-bottom: 1.2em;
+        color: #3F3F3F;
+    }
+
+    code {
+        font-family: 'Courier New', monospace;
+        background: #fffbaf;
+        font-size: 0.85em;
+    }
+
+    .full-width figure {
+        text-align: center;
+    }
+
+    .mango-full-width {
         width: 100%;
     }
 
-        /* margin on mobile */
-        @media (max-width: 640px) {
-            body {
-                font-size: 18px;
-            }
-
-            .content {
-                padding-left: 0.5em;
-                padding-right: 0.5em;
-            }
-        }
-        #scrolly {
+    #scrolly {
         position: relative;
         padding: 1rem;
-      }
+    }
 
-      .scrolly-overlay {
+    .scrolly-overlay {
         position: relative;
         padding: 0;
         max-width: 35rem;
         margin-left: 2px;
         margin-right: auto;
-      }
+    }
 
-      .sticky-thing {
+    .sticky-thing {
         position: -webkit-sticky;
         position: sticky;
         left: 0;
@@ -211,72 +202,149 @@
         z-index: 0;
         top: 0;
         height: 100vh;
-        /* Center everything inside */
         display: flex;
         justify-content: center;
         flex-direction: column;
         justify-content: center;
-      }
+    }
 
-      .step {
+    .step {
         margin: 0 auto 2rem auto;
         margin-bottom: 50rem;
-         background-color: rgba(232, 247, 252, 0.7);
-        text-align: right;
-        transparent: 3;
+        background-color: rgba(232, 247, 252, 0.7);
+        text-align: left;
         border-radius: 15px;
         border: 0.5px solid #E3E3E3;
-      }
+    }
 
-      .step p {
+    .step p {
         padding: 1rem;
         font-size: 18px;
         line-height: 130%;
-        
-      }
+    }
 
-      #zoomBox {
-          width: 100%;
+    #zoomBox {
+        width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
-      }
-      
-      .photoDiv {
-        width: 100vw;        
-        height: auto;      
+    }
+
+    .photoDiv {
+        width: 100vw;
+        height: auto;
         display: block;
         transition:
-        margin 1.5s 0s,
-        transform 2.5s 0s;
-      }
+            margin 1.5s 0s,
+            transform 2.5s 0s;
+    }
 
-      /* When it's less than 700 pixels wide, do normal scrollytelling */
-      @media only screen and (min-width: 700px) {
+    /* ===================== */
+    /* DESKTOP SCROLLYTELLING */
+    /* ===================== */
+    @media only screen and (min-width: 700px) {
         #scrolly.side-by-side {
-          display: flex;
+            display: flex;
         }
 
         #scrolly.side-by-side > div {
-          flex-basis: 0;
-          flex-grow: 1;
-          flex-shrink: 1;
-          padding: 0.75em;
+            flex-basis: 0;
+            flex-grow: 1;
+            flex-shrink: 1;
+            padding: 0.75em;
         }
 
         #scrolly.side-by-side .scrolly-overlay {
-          margin-top: 70vh;
-          order: 0;
-          /* Change these to adjust sizing options */
-          min-width: 15rem;
-          max-width: 20rem;
+            margin-top: 70vh;
+            order: 0;
+            min-width: 15rem;
+            max-width: 20rem;
         }
 
         #scrolly.side-by-side .sticky-thing {
-          order: 1;
-          flex-grow: 2;
+            order: 1;
+            flex-grow: 2;
         }
-      }
+    }
+
+    /* ===================== */
+    /* MOBILE STYLES         */
+    /* ===================== */
+    @media (max-width: 640px) {
+
+        body {
+            font-size: 16px;
+        }
+
+        .content {
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+
+        /* Header banner */
+        .with-image-bg {
+            justify-content: center;
+            min-height: 50svh;
+        }
+
+        .header-text {
+            width: 90%;
+            background-color: rgba(255, 255, 255, 0.88);
+            border-radius: 12px;
+            padding: 1.2em;
+        }
+        .header-text h1 {
+            font-size: 2em;
+        }
+
+        /* Headings */
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 17px;
+        }
+
+        /* Body text */
+        p {
+            font-size: 16px;
+        }
+
+        p.emphasis {
+            font-size: 18px;
+        }
+
+        p2 {
+            font-size: 14px;
+        }
+
+        figcaption {
+            font-size: 13px;
+        }
+
+        /* Scrollytelling */
+        .step {
+            margin-bottom: 20rem;
+            text-align: left;
+        }
+
+        .step p {
+            font-size: 16px;
+        }
+
+        .photoDiv {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Full width images */
+        img.full-width {
+            width: 100vw;
+            margin-left: 0;
+            transform: none;
+        }
+    }
     </style>
 </head>
 
