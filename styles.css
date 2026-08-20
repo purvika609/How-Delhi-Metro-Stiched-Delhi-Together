@@ -1,0 +1,240 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-blue: #18396c;
+  --color-muted: #bcbcbc;
+  --header-height: 965px;
+  --content-width: 757px;
+  --page-width: 1440px;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--color-white);
+  color: var(--color-blue);
+  font-family: Inter, sans-serif;
+}
+
+/* Header — Figma node 205:1089 */
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: var(--page-width);
+  margin: 0 auto;
+  background: var(--color-white);
+  overflow: hidden;
+}
+
+/* Left visual — Figma node 205:7 */
+.header__visual {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+  height: var(--header-height);
+  background: var(--color-white);
+  overflow: hidden;
+}
+
+/* Map image — Figma node 205:8 (x: -340, 1364×965) */
+.header__map {
+  position: absolute;
+  left: -340px;
+  top: 0;
+  width: 1364px;
+  height: 965px;
+  max-width: none;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Fade overlay — Figma node 205:9
+   Softens the map into the white text column (horizontal blend). */
+.header__fade {
+  position: absolute;
+  left: 214px;
+  top: 0;
+  width: 1440px;
+  height: 965px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.55) 45%,
+    rgba(255, 255, 255, 1) 78%
+  );
+  pointer-events: none;
+}
+
+/* Right content — Figma node 205:1088 */
+.header__content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 0 0 var(--content-width);
+  width: var(--content-width);
+}
+
+/* Globe — Figma node 205:2107 */
+.header__globe {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  background: var(--color-white);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.header__globe img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Title + byline stack — Figma node 205:16 */
+.header__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+/* H1 — Source Serif Pro SemiBold 65 / 1.1 / #18396C */
+.header__title {
+  font-family: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 1.1;
+  color: var(--color-blue);
+  text-align: left;
+}
+
+/* Byline group — Figma node 205:15 */
+.header__byline {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+  width: 300px;
+}
+
+/* Author — Inter Semi Bold 23 / 1.2 / #BCBCBC */
+.header__author {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 1.2;
+  color: var(--color-muted);
+}
+
+/* Date — Inter Regular 23 / 1.1 / #BCBCBC */
+.header__date {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 1.1;
+  color: var(--color-muted);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  :root {
+    --header-height: 720px;
+    --content-width: 520px;
+  }
+
+  .header__map {
+    left: -280px;
+    width: 1100px;
+    height: 720px;
+  }
+
+  .header__fade {
+    left: 160px;
+    height: 720px;
+  }
+
+  .header__title {
+    font-size: 48px;
+  }
+
+  .header__author,
+  .header__date {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 860px) {
+  .header {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+
+  .header__visual {
+    flex: none;
+    width: 100%;
+    height: 56vw;
+    min-height: 280px;
+    max-height: 480px;
+  }
+
+  .header__map {
+    left: 50%;
+    top: 50%;
+    width: 140%;
+    height: 140%;
+    transform: translate(-55%, -45%);
+  }
+
+  .header__fade {
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.55) 35%,
+      rgba(255, 255, 255, 0) 70%
+    );
+  }
+
+  .header__content {
+    flex: none;
+    width: 100%;
+    padding: 40px 24px 28px;
+  }
+
+  .header__globe {
+    width: 72px;
+    height: 72px;
+  }
+
+  .header__title {
+    font-size: 36px;
+  }
+
+  .header__byline {
+    width: 100%;
+  }
+
+  .header__author,
+  .header__date {
+    font-size: 16px;
+  }
+}
