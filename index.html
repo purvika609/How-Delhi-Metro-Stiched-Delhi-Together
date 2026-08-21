@@ -29,23 +29,28 @@
             align-items: center;
             justify-content: flex-end;
         }
+
         body {
             margin: 0;
             font-size: 20px;
             font-family: 'Inter';
             text-rendering: optimizeLegibility;
         }
+
         .content {
             max-width: 640px;
             margin: auto;
         }
+
         .header {
             padding: 3em 0;
         }
+
         a {
             font-family: 'Inter';
             color: #18396C;
         }
+
         .footer {
             background: #E1EEF2;
             text-align: center;
@@ -77,10 +82,12 @@
             margin-bottom: -0.1em;
             text-wrap: balance;
         }
+
         .header-text p {
             color: #666;
             font-size: 16px;
         }
+
         /* Mobile header — hidden on desktop */
         .mobile-header-text {
             display: none;
@@ -123,6 +130,7 @@
             padding-bottom: 1em;
             color: #3F3F3F;
         }
+
         p.emphasis {
             font-family: 'Inter';
             font-weight: 600;
@@ -147,10 +155,12 @@
             padding-bottom: 1em;
             line-height: 1.6;
         }
+
         iframe {
             padding-bottom: 1.2em;
             color: #3F3F3F;
         }
+
         code {
             font-family: 'Courier New', monospace;
             background: #fffbaf;
@@ -199,6 +209,7 @@
             font-size: 18px;
             line-height: 130%;
         }
+
         #zoomBox {
             width: 100%;
             height: 100%;
@@ -220,23 +231,27 @@
             #scrolly.side-by-side {
                 display: flex;
             }
+
             #scrolly.side-by-side > div {
                 flex-basis: 0;
                 flex-grow: 1;
                 flex-shrink: 1;
                 padding: 0.75em;
             }
+
             #scrolly.side-by-side .scrolly-overlay {
                 margin-top: 70vh;
                 order: 0;
                 min-width: 15rem;
                 max-width: 20rem;
             }
+
             #scrolly.side-by-side .sticky-thing {
                 order: 1;
                 flex-grow: 2;
             }
         }
+
         /* ===================== */
         /* MOBILE STYLES         */
         /* ===================== */
@@ -250,6 +265,7 @@
                 padding-left: 1em;
                 padding-right: 1em;
             }
+
             /* Hide desktop banner text on mobile */
             .with-image-bg {
                 min-height: 40svh;
@@ -257,9 +273,11 @@
                 display: block;
                 margin-bottom: 0;
             }
+
             .header-text {
                 display: none;
             }
+
             /* Show mobile header text block */
             .mobile-header-text {
                 display: block;
@@ -267,6 +285,7 @@
                 padding: 1.5em 1em;
                 background-color: #ffffff;
             }
+
             .mobile-header-text img {
                 display: block;
                 margin: 0 auto 0.5em auto;
@@ -315,36 +334,44 @@
             figcaption {
                 font-size: 13px;
             }
+
             /* Full width images */
             img.full-width {
                 width: 100vw;
                 margin-left: 0;
                 transform: none;
             }
+
             /* Scrollytelling */
             #scrolly {
                 padding: 0;
             }
+
             .sticky-thing {
                 height: 50vh;
             }
+
             .photoDiv {
                 width: 100vw;
                 height: 50vh;
                 object-fit: contain;
             }
+
             #zoomBox {
                 width: 100vw;
             }
+
             .scrolly-overlay {
                 margin-top: 0;
                 max-width: 100%;
                 padding: 0 1em;
             }
+
             .step {
                 margin-bottom: 10rem;
                 text-align: left;
             }
+
             .step p {
                 font-size: 16px;
             }
@@ -375,3 +402,126 @@
     <div class="content">
         <img src="images/icon.png" alt="A train icon" width="70" height="70" style="display: block; margin: 0 auto;">
         <h2>From a single line in 2002 to one of the world's largest metro systems.</h2>
+        <p class="subhead">When the Delhi Metro started in 2002, it consisted of a single line and a handful of stations. Today, it is one of the largest metro systems in the world, carrying millions of passengers every day and connecting neighborhoods that once felt hours apart.</p>
+        <p>This project explores the growth of the Delhi Metro-from its first stations to the network that now spans the National Capital Region. It traces how the system expanded, how it changed access across the city, and where it is headed next.</p>
+
+        <p class="emphasis">Delhi grew really fast</p>
+        <p>Delhi has always been a city of movement. As its population grew through the 1980s and 1990s, so did the number of vehicles on its roads. Longer commutes, traffic congestion, and air pollution became everyday challenges.</p>
+        <p>Building wider roads could only solve part of the problem. The city needed a high-capacity public transport system that could move large numbers of people quickly and reliably, without depending on road traffic.</p>
+        <p>The Delhi Metro was envisioned as that solution.</p>
+    </div>
+
+    <figure style="margin: 0; overflow: hidden;">
+        <img class="full-width" src="images/metro2.jpg" alt="An image of Delhi metro">
+    </figure>
+    <div class="content">
+        <figcaption>Source: Economics Times</figcaption>
+    </div>
+
+    <section id="scrolly">
+        <div class="sticky-thing">
+            <div id="zoomBox">
+                <img id="scrollyPhoto" class="photoDiv" src="images/phase1.jpg" alt="Map of Delhi showing the first phase of the Delhi Metro">
+            </div>
+            <div class="content">
+                <figcaption>Source: Kaggle • Made with QGIS</figcaption>
+            </div>
+        </div>
+
+        <div class="scrolly-overlay">
+            <div class="step" id="step1">
+                <p class="emphasis">Phase I 2002 - 2006</p>
+                <p>The first phase marked the beginning of Delhi's metro system. It covered about 65 km of route length with 59 stations, introducing the first Red, Yellow, and Blue line segments.</p>
+            </div>
+            <div class="step" id="step2">
+                <p class="emphasis">Phase II 2006 - 2011</p>
+                <p>Added roughly 125 km and 86 stations, extending lines into neighboring cities like Noida, Gurgaon, and Ghaziabad.</p>
+            </div>
+            <div class="step" id="step3">
+                <p class="emphasis">Phase III 2011 - 2019</p>
+                <p>Contributed an additional 160 km and 109 stations, adding crucial inner and outer ring corridors like the Pink and Magenta lines.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="content">
+        <p class="emphasis">Phase IV and V (Current and Upcoming Expansion)</p>
+        <p>Phase IV (Ongoing): Will add about 112 km across multiple new and extended corridors (such as Aerocity-Tughlaqabad). Phase V: Features Phase V(A) and V(B) approvals to link central areas, the Central Vista, and outer suburban pockets like Narela and Najafgarh with new high-density corridors</p>
+        <p class="emphasis">Delhi vs the world</p>
+        <p>Some networks are older, some are larger, and some carry more passengers. Delhi's network is relatively young, yet it has expanded at an exceptional pace.</p>
+        <p>Talk about how Delhi metro has made it to one of largest metro system in the world.</p>
+    </div>
+
+    <img class="full-width" src="images/metro.jpg" alt="An image of crowd at a Delhi metro station">
+
+    <div class="content">
+        <figcaption>Source: Aljazeera / Arthur Thouret</figcaption>
+        <p2>Delhi metro was established most recently among the top largest metro systems of the world</p2>
+        <img src="images/timeline.png" alt="Visualisation of metros operating years from around the world">
+        <figcaption>Source: Metroworld • Made with Figma</figcaption>
+        <p>The Delhi Metro is one of the world's youngest large metro systems, opening in 2002. Despite its relatively recent beginnings, it has expanded at a remarkable pace, matching the scale of networks that have been developing for over a century.</p>
+        <p2>Delhi metro is the 4th longest metro system in the world (in km)</p2>
+        <img src="images/chart1.png" alt="Visualisation of metros network length from around the world">
+        <figcaption>Source: Metroworld • Made with Figma</figcaption>
+        <p2>Annual Ridership for 2024-25</p2>
+        <img src="images/chat2.png" alt="Visualisation of annual ridership on metros across the world">
+        <figcaption>Source: Firstpost • Made with Flourish and Adobe Illustrator</figcaption>
+        <p>Some metro systems are longer, while others carry more people. Annual ridership provides a useful way to compare how intensively different networks are used.</p>
+        <p class="emphasis">Delhi Metro Still Growing</p>
+        <p>The Delhi Metro continues to evolve. New lines, extensions, and stations are under construction, expanding the network to serve new neighborhoods and accommodate a growing population.</p>
+    </div>
+
+    <div class="footer">
+        <div class="content">
+            <p2>This project was created during <a href="https://ledeprogram.com">The Lede Program</a> at Columbia's Graduate School of Journalism.
+            You can find the github repo for this project <a href="https://github.com/purvika609/The-great-Indian-Mango-Obsession">here</a>.
+            purvikasharma[at]gmail[com]</p2>
+        </div>
+    </div>
+
+    <script>
+        d3.select("#step1").on('stepin', function(e) {
+            d3.select("#scrollyPhoto").attr("src", "images/phase1.jpg");
+        })
+        d3.select("#step2").on('stepin', function(e) {
+            d3.select("#scrollyPhoto").attr("src", "images/phase2.jpg");
+        })
+        d3.select("#step3").on('stepin', function(e) {
+            d3.select("#scrollyPhoto").attr("src", "images/phase3.jpg");
+        })
+    </script>
+
+    <script>
+        const scroller = scrollama();
+        scroller
+            .setup({
+                step: "#scrolly .scrolly-overlay .step",
+                offset: 0.5,
+                debug: false
+            })
+            .onStepEnter(function({ element, index, direction }) {
+                const event = new CustomEvent('stepin', { detail: { direction: direction } })
+                element.dispatchEvent(event);
+            })
+            .onStepExit(function({ element, index, direction }) {
+                const event = new CustomEvent('stepout', { detail: { direction: direction } })
+                element.dispatchEvent(event);
+            });
+
+        window.addEventListener("resize", scroller.resize);
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const isSmallScreen = window.innerWidth <= 900;
+            if (isSmallScreen) {
+                document.getElementById("deviceModal").style.display = "flex";
+            }
+            document.getElementById("continueBtn").addEventListener("click", function () {
+                document.getElementById("deviceModal").style.display = "none";
+            });
+        });
+    </script>
+
+</body>
+</html>
